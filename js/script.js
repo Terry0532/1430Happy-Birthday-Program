@@ -1,14 +1,11 @@
 function button() {
-  let input = prompt("today is your birthday? (1 for yes, 2 for no)");
-  switch (input) {
-    case "1":
-      alert("happy birthday!!!");
-      break;
-    case "2":
-      alert("no happy birthday for you today.");
-      break;
-    default:
-      alert("please enter 1 or 2.");
-      break;
+  let name = prompt("what's your name?");
+  let age = prompt("what's your age?");
+  if (age < 50) {
+    alert(
+      "Hello " + name + ". You are " + age + " years old! You're still young!"
+    );
+  } else {
+    alert("Hello " + name + ". You are " + age + " years old! you're old!");
   }
 }
